@@ -23,14 +23,14 @@ To run this application, you will need:
 1. Clone the repository
 
 ```bash
-`git@github.com:nethulap/pixel.git`
+git@github.com:nethulap/pixel.git
 ```
 
 2. Install Dependencies
 
 ```bash
-`cd pixel
- npm install`
+cd pixel
+npm install
 ```
 
 3. Configure MongoDB
