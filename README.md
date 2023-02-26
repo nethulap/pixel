@@ -47,8 +47,8 @@ To run this application, you will need:
 5. Run the application
 
 ```bash
-`cd pixel-api
- npm install`
+cd pixel-api
+npm install
 ```
 
 ## Development server
