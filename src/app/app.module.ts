@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PixelMaterialModule } from 'src/pixel-material.module';
 import { AppointmentComponent } from './appointment/components/appointment.component';
+import { AppointmentDetailComponent } from './appointment/components/appointment-detail/appointment-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    AppointmentDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    PixelMaterialModule
+    PixelMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

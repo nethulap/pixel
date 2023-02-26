@@ -1,1 +1,25 @@
-<p>appointment works!</p>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 appoint-table">
+    <!-- <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">
+      <th mat-header-cell *matHeaderCellDef>
+        {{column.header}}
+      </th>
+      <td mat-cell *matCellDef="let row">
+        {{column.cell(row)}}
+      </td>
+    </ng-container> -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let appointment"> {{appointment.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Appointment-Date </th>
+        <td mat-cell *matCellDef="let appointment"> {{appointment.date | date}} </td>
+    </ng-container>
+    <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef> Appointment-Time </th>
+        <td mat-cell *matCellDef="let appointment"> {{appointment.time | date:'shortTime'}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
